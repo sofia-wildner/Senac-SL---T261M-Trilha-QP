@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#121212;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:360px;
+    text-align:center;
+}
+
+.logo{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+h1{
+    font-size:50px;
+    margin-bottom:30px;
+    font-weight:700;
+}
+
+form{
+    text-align:left;
+}
+
+label{
+    font-size:12px;
+    font-weight:bold;
+}
+
+input{
+    width:100%;
+    margin-top:8px;
+    margin-bottom:20px;
+    padding:12px;
+    background:#121212;
+    border:1px solid #6a6a6a;
+    border-radius:4px;
+    color:white;
+}
+
+.continuar{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    background:#1ed760;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    margin-bottom:25px;
+    transition:.3s;
+}
+
+.continuar:hover{
+    background:#3be477;
+}
+
+.linha{
+    display:flex;
+    align-items:center;
+    color:#b3b3b3;
+    margin:20px 0;
+}
+
+.linha::before,
+.linha::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:#3d3d3d;
+}
+
+.linha span{
+    margin:0 15px;
+    font-size:14px;
+}
+
+.fa-solidfa-mobile-screen p{
+    margin:0;
+    padding:0;
+}
+
+.social{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap:20px;
+    padding:14px 18px;
+    margin-bottom:12px;
+    background:transparent;
+    border:1px solid #666;
+    border-radius:30px;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.social:hover{
+    border:1px solid white;
+}
+
+.social i{
+    width:20px;
+    font-size:18px;
+}
+
+.conta{
+    color:#a7a7a7;
+    margin-top:30px;
+    margin-bottom:8px;
+}
+
+a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+.rodape{
+    color:#7a7a7a;
+    font-size:10px;
+    margin-top:40px;
+    line-height:16px;
+}
