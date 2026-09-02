@@ -1,0 +1,296 @@
+/* =========================
+   PÁGINA
+========================= */
+
+body {
+    font-family: "Abril Fatface", serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    margin: 0;
+
+    background-color: #f7e9e9;
+}
+
+
+/* Caixa principal da calculadora */
+.calculadora {
+    width: 350px;
+
+    padding: 30px;
+
+    background-color: rgb(240, 223, 223);
+
+    border: 4px solid #333;
+    border-radius: 30px;
+
+    box-shadow: 0 40px 120px rgba(0, 0, 0, 2);
+
+    text-align: center;
+}
+
+
+/* Título */
+h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    color: #333;
+}
+
+
+/* Visor */
+#calculator {
+    margin-bottom: 25px;
+}
+
+output {
+    display: block;
+
+    width: 100%;
+    height: 55px;
+
+    box-sizing: border-box;
+
+    padding: 10px 15px;
+
+    background-color: #dddddd;
+
+    border: 2px solid #333;
+    border-radius: 10px;
+
+    font-family: "Abril Fatface", serif;
+    font-size: 1.5em;
+
+    color: #333;
+
+    text-align: right;
+    line-height: 30px;
+}
+
+
+/* Área dos números */
+.op {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    background-color: pink;
+    border-radius: 5px;
+}
+
+#firstNumber,
+#secondNumber {
+    font-family: "Abril Fatface", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+   background-color: rgb(245, 224, 227);
+}
+
+/* Campos dos números */
+input[type="number"] {
+    width: 90px;
+    height: 45px;
+
+    box-sizing: border-box;
+
+    padding: 5px;
+    margin: 5px;
+
+    text-align: center;
+
+    border: 1px solid #777;
+    border-radius: 5px;
+
+    font-size: 16px;
+
+}
+
+
+/* Tirar as flechinhas dos números */
+
+/* Chrome, Edge e Safari */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+/* Símbolo que fica entre os números */
+.operador {
+    font-family: Arial, sans-serif;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    width: 25px;
+}
+
+/* =========================
+   BOTÕES DAS OPERAÇÕES
+========================= */
+
+.operacoes {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-bottom: 20px;
+}
+
+
+.operacoes button {
+    width: 35px;
+    height: 30px;
+
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    border: 1px solid #777;
+    border-radius: 5px;
+
+    background-color: rgb(209, 180, 185)
+}
+
+
+/* Quando passar o mouse */
+
+.operacoes button:hover {
+    background-color: #ddd;
+}
+
+
+/* =========================
+   BOTÕES CALCULATE E LIMPAR
+========================= */
+
+button {
+    padding: 5px 15px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    border: 1px solid #777;
+    border-radius: 5px;
+
+    margin: 5px;
+    width: 100px;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    display: inline-block;
+}
+
+#calculate {
+    background-color: pink
+}
+
+#clear {
+    background-color: rgb(245, 224, 227);
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+/* Mudar simbolo */
+#simbolo {
+    font-family: "Abril Fatface", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    width: 25px;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    /* Caixa da calculadora */
+    .calculadora {
+        width: 100%;
+        max-width: 350px;
+        padding: 25px 20px;
+        box-sizing: border-box;
+    }
+
+    /* Título */
+    h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    /* Visor */
+    output {
+        height: 50px;
+        font-size: 1.3em;
+    }
+
+    /* Números e símbolo */
+    .op {
+        gap: 5px;
+    }
+
+    input[type="number"] {
+        width: 80px;
+        height: 42px;
+        margin: 3px;
+    }
+
+    #simbolo {
+        font-size: 22px;
+        width: 20px;
+    }
+
+    /* Botões das operações */
+    .operacoes {
+        gap: 6px;
+        margin-bottom: 15px;
+    }
+
+    .operacoes button {
+        width: 40px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    /* Calculate e Limpar */
+    button {
+        width: 100px;
+        padding: 7px 10px;
+        font-size: 14px;
+    }
+}
